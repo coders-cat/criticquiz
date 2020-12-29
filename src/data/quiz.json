@@ -1,0 +1,78 @@
+{
+  "title": "Comprovi el seu esperit crític",
+  "description": "Davant d'una informació que li resulta nova o sorprenent, fins a quin punt pren distància?",
+  "instructions": "Avaluís a partir dels següents deu enunciats. Per cada una de les frases, indiqui la resposta que més s'ajusta a la seva forma de pensar:",
+  "explanation": "Les qüestions d'aquest test valoren els elements que, segons els psicòlegs, són rellevants en la disposició del pensament crític: importància que s'atorga a la veritat (enunciats 1 i 2), apertura de pensament (3 i 4), pensament espontàniament analític o racional (5 i 6), afany per cercar la veritat (7 i 8) i maduresa cognitiva (9 i 10, que es corresponen amb una visió equilibrada de la realitat i la seva complexitat). A través dels resultats en els diferents parells de qüestions, vostè pot fer-se una idea de la seva manera de procedir en relació a cada un dels tres factors del pensament crític mencionats.",
+  "note": "Aquest test no ha estat objecte d'una valoració científica com a tal, però s'inspira en un projecte dirigit pels psicòlegs Virginie Bagneux, Katia Terriot, Sylvain Delouvée i Nicolas Gauvrit en el marc d'un conveni amb la DEPP (sigles en francès de «Direcció d'Avaluació, Prospectiva i Actuació» del Ministeri d'Educació de França).",
+  "questions": [
+    {
+      "id": 1,
+      "text": "Per mi, la veritat és més important que la felicitat."
+    },
+    {
+      "id": 2,
+      "text": "Crec el que vull creure."
+    },
+    {
+      "id": 3,
+      "text": "Per mi, és important entendre el que pensen els demés."
+    },
+    {
+      "id": 4,
+      "text": "M'enfado amb els meus amics quan no estem d'acord sobre els detalls."
+    },
+    {
+      "id": 5,
+      "text": "Em molesta que les persones facin servir mals arguments per defensar bones idees."
+    },
+    {
+      "id": 6,
+      "text": "Tendeixo a fer-me molt ràpidament una idea precisa sobre temes que em resulten novedosos."
+    },
+    {
+      "id": 7,
+      "text": "Sigui quin sigui el tema, sempre vull saber-ne més."
+    },
+    {
+      "id": 8,
+      "text": "No m'interessa saber el funcionament d'alguna cosa si ja funciona."
+    },
+    {
+      "id": 9,
+      "text": "Penso que fins i tot els experts a vegades són víctimes dels seus propis prejudicis."
+    },
+    {
+      "id": 10,
+      "text": "Per mi, cada problema te una solució millor que totes les demés. Depèn de nosaltres de trobar-la."
+    }
+  ],
+  "answers": [
+    {
+      "id": 1,
+      "answer": "Totalment en desacord"
+    },
+    {
+      "id": 2,
+      "answer": "Més aviat no"
+    },
+    {
+      "id": 3,
+      "answer": "Més aviat sí"
+    },
+    {
+      "id": 4,
+      "answer": "Totalment d'acord"
+    }
+  ],
+  "answers2": [
+    "Totalment en desacord",
+    "Més aviat no",
+    "Més aviat sí",
+    "Totalment d'acord"
+  ],
+  "results": {
+    "0-9": "No sembla que la veritat sigui lo fonamental per vostè. Més aviat tendeix a movilitzar les seves capacitats de raonament i pensament crític només en els casos en els que resulta veritablement indispensable.",
+    "10-19": "Es troba en un terme mig. Encara que intenta adoptar cert pensament crític, no és un racionalista inveterat.",
+    "20-30": "Segons sembla, el seu estil de pensament és particularment crític. Concedeix molta importància a la veritat, empra de manera espontània l'art del dubte i és obert, però desconfiat."
+  }
+}

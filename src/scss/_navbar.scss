@@ -1,0 +1,14 @@
+.navbar {
+  flex-direction: column;
+}
+
+.navbar-end {
+  &.navbar-end-all-media {
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+}
+
+.navbar-item img {
+  max-height: 2.75rem;
+}
