@@ -3,16 +3,14 @@ import Quiz from './components/quiz/Quiz';
 
 function App() {
   return (
-    <>
-      <main>
-        <div className="container">
-          <div className="content">
-            <Navbar />
-            <Quiz />
-          </div>
-        </div>
-      </main>
-    </>
+    <div className="container is-fluid">
+      <div className="content">
+        <Navbar />
+        <main>
+          <Quiz />
+        </main>
+      </div>
+    </div>
   );
 }
 
