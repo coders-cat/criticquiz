@@ -1,8 +1,9 @@
 import { useEffect, useReducer, useRef, useState } from 'react';
-import quiz from '../../data/quiz.json';
+
+import Question from './Question';
 import QuizResults from './QuizResults';
 import Switch from '../switch/Switch';
-import Question from './Question';
+import quiz from '../../data/quiz.json';
 
 function reducer(state, action) {
   switch (action.type) {
@@ -11,28 +12,30 @@ function reducer(state, action) {
         ...state,
         step: 'quizzing',
         question: state.quiz.questions[0],
-        index: 0
+        index: 0,
       };
-    case 'next':
+    case 'next': {
       const next = state.index + 1;
       return {
         ...state,
         step: 'quizzing',
         question: state.quiz.questions[next],
-        index: next
+        index: next,
       };
-    case 'prev':
+    }
+    case 'prev': {
       const prev = state.index - 1;
       return {
         ...state,
         step: 'quizzing',
         question: state.quiz.questions[prev],
-        index: prev
+        index: prev,
       };
+    }
     case 'results':
       return {
         ...state,
-        step: 'results'
+        step: 'results',
       };
     default:
       return state;
@@ -44,7 +47,7 @@ const Quiz = () => {
   const [state, dispatch] = useReducer(reducer, {
     step: 'initial',
     question: {},
-    quiz
+    quiz,
   });
 
   const questionRef = useRef(null);
@@ -63,7 +66,7 @@ const Quiz = () => {
     if (showViewResults) {
       showResultsRef.current.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     }
   }, [showViewResults]);
@@ -72,18 +75,18 @@ const Quiz = () => {
     if (state.step === 'quizzing') {
       questionRef.current.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     } else if (state.step === 'results') {
       resultRef.current.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'start',
       });
     }
   }, [state]);
 
-  const setResponse = answer => {
-    setResponses(resp => ({ ...resp, [state.question.id]: answer.id }));
+  const setResponse = (answer) => {
+    setResponses((resp) => ({ ...resp, [state.question.id]: answer.id }));
   };
 
   const reset = () => {

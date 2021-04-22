@@ -10,14 +10,14 @@ const QuizResults = React.forwardRef(
             1: 0,
             2: 1,
             3: 2,
-            4: 3
+            4: 3,
           }[responses[index]];
         } else {
           total += {
             1: 3,
             2: 2,
             3: 1,
-            4: 0
+            4: 0,
           }[responses[index]];
         }
       }
