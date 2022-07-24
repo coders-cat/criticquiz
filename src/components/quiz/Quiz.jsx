@@ -1,7 +1,7 @@
 import { useEffect, useReducer, useRef, useState } from 'react';
 
 import Question from './Question';
-import QuizResults from './QuizResults';
+import { QuizResults } from 'components/quiz/QuizResults';
 import Switch from '../switch/Switch';
 import quiz from '../../data/quiz.json';
 
