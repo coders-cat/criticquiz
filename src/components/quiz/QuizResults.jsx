@@ -1,5 +1,7 @@
 import { forwardRef, useMemo } from 'react';
 
+import PropTypes from 'prop-types';
+
 const QuizResultsScore = ({ responses, results, children }, ref) => {
   const response = useMemo(() => {
     let total = 0;
@@ -41,3 +43,13 @@ const QuizResultsScore = ({ responses, results, children }, ref) => {
 };
 
 export const QuizResults = forwardRef(QuizResultsScore);
+
+QuizResultsScore.propTypes = {
+  responses: PropTypes.arrayOf(PropTypes.number.isRequired).isRequired,
+  results: PropTypes.shape({
+    '0-9': PropTypes.string.isRequired,
+    '10-19': PropTypes.string.isRequired,
+    '20-30': PropTypes.string.isRequired,
+  }).isRequired,
+  children: PropTypes.node.isRequired,
+};

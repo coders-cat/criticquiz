@@ -2,8 +2,8 @@ import { useEffect, useReducer, useRef, useState } from 'react';
 
 import Question from './Question';
 import { QuizResults } from 'components/quiz/QuizResults';
-import Switch from '../switch/Switch';
-import quiz from '../../data/quiz.json';
+import Switch from 'components/switch/Switch';
+import quiz from 'data/quiz.json';
 
 function reducer(state, action) {
   switch (action.type) {

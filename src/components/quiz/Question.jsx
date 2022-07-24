@@ -1,4 +1,5 @@
 import Answer from './Answer';
+import PropTypes from 'prop-types';
 
 const Question = ({ title, answers, answerId, setAnswer }) => (
   <>
@@ -18,3 +19,14 @@ const Question = ({ title, answers, answerId, setAnswer }) => (
 );
 
 export default Question;
+
+Question.propTypes = {
+  title: PropTypes.string.isRequired,
+  answers: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
+  answerId: PropTypes.number,
+  setAnswer: PropTypes.func.isRequired,
+};
